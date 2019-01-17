@@ -202,6 +202,55 @@
     }
 }
 
+/* <------------ ABOUT ------------> */
+.about-container {
+    height: calc(100vh - 180px);
+    width: 100%;
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about{
+    position: absolute;
+    color: white;
+    z-index: 2;
+    left: 17%;
+    top: 22%;
+    max-width: 500px;
+}
+.about h4{
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Droid Serif', serif;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255,255,255,0.91);
+    padding-bottom: 20px;
+}
+.about h2{
+    color: #fff;
+    text-align: left;
+    font-weight: 700;
+    font-size: 34px;
+    float: left;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.about p{
+    font-size: 13px;
+}
+
+
+@media only screen and (max-width: 1085px) {
+    .about{
+        left: 5%;
+        max-width: 300px;
+    }
+
+}
+
 
 /* <------------ FOOTER ------------> */
 footer.footer{
