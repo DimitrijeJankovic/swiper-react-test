@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { StaticRouter, Switch, Route,  } from 'react-router-dom'
 import './App.css'
 
 import Navbar from './components/global/Navbar'
@@ -11,20 +11,20 @@ class App extends Component {
 
   render() {
     return(
-      <BrowserRouter>
-      <div>
+      <StaticRouter>
         <div className="container-fluid">
           <Navbar />
           <Switch>
-            <Route path="about" component={About} />
-            <Route path="" component={Main} />
+            <Route exact path="/" component={Main} />
+            <Route exact path="/about" component={About} />
           </Switch>
           <Footer />
         </div>
-      </div>
-      </BrowserRouter>
+      </StaticRouter>
     )
   }
+
+
 }
 
-export default App;
+export default App
