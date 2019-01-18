@@ -34,10 +34,10 @@ class Navbar extends Component {
 		            </div>
 		            <nav className={this.state.toggleMenu ? "menu-links menu-links-mob" : "menu-links"}>
 		              <ul>
-		                <li><Link to={""}>Home</Link></li>
-                        <li><Link to={"gallery"}>Weddings</Link></li>
-                        <li><Link to={"about"}>About</Link></li>
-                        <li><Link to={"contact"}>Contact</Link></li>
+		                <li><Link to={"/"}>Home</Link></li>
+                        <li><Link to={"/gallery"}>Weddings</Link></li>
+                        <li><Link to={"/about"}>About</Link></li>
+                        <li><Link to={"/contact"}>Contact</Link></li>
 		              </ul>
 		            </nav>
 		          </div>

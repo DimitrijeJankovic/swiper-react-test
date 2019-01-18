@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route,  } from 'react-router-dom'
+import { HashRouter, Switch, Route,  } from 'react-router-dom'
 import './App.css'
 
 import Navbar from './components/global/Navbar'
@@ -11,16 +11,18 @@ class App extends Component {
 
   render() {
     return(
-      <BrowserRouter>
+      <HashRouter>
         <div className="container-fluid">
           <Navbar />
           <Switch>
-            <Route exact path="" component={Main} />
-            <Route exact path="about" component={About} />
+            <div>
+              <Route exact path="/" component={Main} />
+              <Route path="/about" component={About} />
+            </div>
           </Switch>
           <Footer />
         </div>
-      </BrowserRouter>
+      </HashRouter>
     )
   }
 
