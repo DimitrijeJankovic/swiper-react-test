@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StaticRouter, Switch, Route,  } from 'react-router-dom'
+import { BrowserRouter, Switch, Route,  } from 'react-router-dom'
 import './App.css'
 
 import Navbar from './components/global/Navbar'
@@ -11,7 +11,7 @@ class App extends Component {
 
   render() {
     return(
-      <StaticRouter>
+      <BrowserRouter>
         <div className="container-fluid">
           <Navbar />
           <Switch>
@@ -20,7 +20,7 @@ class App extends Component {
           </Switch>
           <Footer />
         </div>
-      </StaticRouter>
+      </BrowserRouter>
     )
   }
 
