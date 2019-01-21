@@ -6,6 +6,7 @@ import Navbar from './components/global/Navbar'
 import Footer from './components/global/Footer'
 import Main from './components/Main'
 import About from './components/About'
+import Contact from './components/Contact'
 
 class App extends Component {
 
@@ -18,6 +19,7 @@ class App extends Component {
             <div>
               <Route exact path="/" component={Main} />
               <Route path="/about" component={About} />
+              <Route path="/contact" component={Contact} />
             </div>
           </Switch>
           <Footer />

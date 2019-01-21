@@ -56,24 +56,18 @@ class Main extends Component {
                   <div className="overlay"></div>
                   <div className="bg" style={image.img2}></div>
                   <div className="swiper-content">
-                    <h3>Some text</h3>
-                    <p>ovde ide nesto najslepse sto se ikada culi u zivotu</p>
                   </div>
                 </div>
                 <div className="swiper-main-conatiner">
                   <div className="overlay"></div>
                   <div className="bg" style={image.img3}></div>
                   <div className="swiper-content">
-                    <h3>Some text</h3>
-                    <p>ovde ide nesto najslepse sto se ikada culi u zivotu</p>
                   </div>
                 </div>
                 <div className="swiper-main-conatiner">
                   <div className="overlay"></div>
                   <div className="bg" style={image.img4}></div>
                   <div className="swiper-content">
-                    <h3>Some text</h3>
-                    <p>ovde ide nesto najslepse sto se ikada culi u zivotu</p>
                   </div>
                 </div>
             </Swiper>

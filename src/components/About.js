@@ -11,7 +11,7 @@ class About extends Component {
 
     return(
       <div className="about-container">
-        <div className="overlay-darker"></div>
+        <div className="overlay"></div>
         <div className="bg" style={image}></div>
         <div className="about">
           <h2>Welcome to My site</h2>
