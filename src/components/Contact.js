@@ -23,8 +23,8 @@ class Contact extends Component {
                         </p>
                         <div className="contact-details">
                             <ul>
-                                <li><span>Mail:</span>dsadsadasda</li>
-                                <li><span>Phone:</span>445656446464</li>
+                                <li><span>Call:</span>+381601479990</li>
+                                <li><span>Write:</span>info@openconceptp.com</li>
                             </ul>
                         </div>
                     </div>
