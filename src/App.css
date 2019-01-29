@@ -129,8 +129,6 @@
 @media only screen and (max-width: 1085px) {
     nav.menu-links{
         transform: translateY(-410px);
-
-        background-color: white;
         width: 270px;
         margin-right: -97px;
         padding-bottom: 50px;
@@ -139,12 +137,32 @@
         position: relative;
         float: right;
     }
+    nav.menu-links ul{
+        transform: translateY(30px);
+    }
     nav.menu-links ul li{
+        background-color: rgba(255,255,255, 0.6);
         display: block;
-        width: 100%;
+        width: 98%;
+        line-height: 70px;
+    }
+    nav.menu-links ul li a{
+        color: #000;
     }
     .nav-menu-btn{
         display: inline;
+    }
+    .m-b-5{
+        transform: translateY(5px);
+    }
+    .m-b-10{
+        transform: translateY(10px);
+    }
+    .m-b-15{
+        transform: translateY(15px);
+    }
+    .m-b-20{
+        transform: translateY(20px);
     }
 }
 
@@ -195,6 +213,37 @@
 .swiper-container{
     height: calc(100vh - 180px);
     width: 100%;
+}
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: darkgray;
+}
+.swiper-button-prev, .swiper-button-next, .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    background-size: 30px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+.swiper-button-prev{
+    background-image: url('./icons/arrow-left.png');
+}
+.swiper-button-next{
+    background-image: url('./icons/arrow-right.png');
 }
 @media only screen and (max-width: 1085px) {
     nav.menu-links{
@@ -379,6 +428,7 @@ footer.footer{
     text-transform: uppercase;
     font-weight: 700;
     margin-top: 30px;
+    margin-left: -9px;
 }
 .policy span {
     float: left;
@@ -388,7 +438,11 @@ footer.footer{
 }
 .social-media {
     float: right;
-    margin-top: 30px;
+    margin-right: -33px;
+    margin-top: 26px;
+}
+.socila-icon{
+    display: none;
 }
 .social-media ul{
     list-style: none;
@@ -406,4 +460,16 @@ footer.footer{
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
+}
+
+@media only screen and (max-width: 750px) {
+    .social-media{
+        margin-right: -31px;
+    }
+    .socila-icon{
+        display: block;
+    }
+    .socila-text{
+        display: none;
+    }
 }

@@ -15,8 +15,10 @@ class Footer extends Component {
 	              </div>
 	              <div className="social-media col-lg-4">
 	                <ul>
-	                  <li><Link to={"/"}><span>Facebook</span></Link></li>
-	                  <li><Link to={"/"}><span>Instagram</span></Link></li>
+										<li className="socila-icon"><Link to={"/"}><i class="fab fa-facebook-square"></i></Link></li>
+	                  <li className="socila-text"><Link to={"/"}><span>Facebook</span></Link></li>
+										<li className="socila-icon"><Link to={"/"}><i class="fab fa-instagram"></i></Link></li>
+	                  <li className="socila-text"><Link to={"/"}><span>Instagram</span></Link></li>
 	                </ul>
 	              </div>
 	            </footer>

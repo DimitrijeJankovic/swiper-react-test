@@ -43,6 +43,7 @@ class Main extends Component {
 		return (
 			<div className="row">
             <div className="main">
+
               <Swiper {...params}>
                 <div className="swiper-main-conatiner">
                   <div className="overlay"></div>
