@@ -292,6 +292,12 @@
 }
 
 /* <------------ CONTSCT ------------> */
+.test {
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
 .contact-page {
     height: calc(100vh - 180px);
     width: 100%;
@@ -300,13 +306,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 45px;
 }
 .contact{
     position: absolute;
     color: white;
     z-index: 2;
     left: 7%;
-    top: 16%;
+    top: 10%;
     max-width: 500px;
 }
 .contact h2{
@@ -342,7 +349,7 @@
     color: white;
     z-index: 2;
     left: 7%;
-    top: 50%;
+    top: 40%;
     max-width: 500px;
 }
 .contact-form input[type="text"] , .contact-form textarea , .comment-form input[type="text"]  , .comment-form textarea{
