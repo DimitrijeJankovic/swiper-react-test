@@ -3,6 +3,7 @@ import { HashRouter, Switch, Route,  } from 'react-router-dom'
 import './App.css'
 
 import Navbar from './components/global/Navbar'
+
 import Footer from './components/global/Footer'
 import Main from './components/Main'
 import About from './components/About'
@@ -14,9 +15,9 @@ class App extends Component {
     return(
       <HashRouter>
         <div className="container-fluid">
-          <Navbar />
+            <Navbar />
           <Switch>
-            <div>
+            <div className="body">
               <Route exact path="/" component={Main} />
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />

@@ -9,7 +9,7 @@ class Footer extends Component {
 			<div className="row">
 	            <footer className="footer">
 	              <div className="policy col-lg-4">
-	                <span>© DSPhotography 2019  /  All rights reserved. </span>
+	                <span>© Open Concept Photography 2019  /  All rights reserved. </span>
 	              </div>
 	              <div className="swiper-pagination col-lg-4">
 	              </div>
