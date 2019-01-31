@@ -16,7 +16,7 @@ class About extends Component {
             <div className="overlay"></div>
             <div className="bg" style={image}></div>
             <div className="about-main-text">
-              <h1>WELCOME TO <br/>OUR STUDIO</h1>
+              <h1>WELCOME TO<br/>OUR STUDIO</h1>
             </div>
           </div>
         </div>
@@ -44,27 +44,9 @@ class About extends Component {
               <h2>Team</h2>
 
               <div className="member-container">
-                <div className="row">
-                  <div className="member col-lg-4">
-                    <div className="member-img overlay-member" style={image}></div>
-                    <h3 className="member-name">Dimitrije Jankovic</h3>
-                    <p className="position">Junior</p>
-                    <ul className="member-social">
-                      <li>Intagram</li>
-                      <li>Facebook</li>
-                    </ul>
-                  </div>
-                  <div className="member col-lg-4">
-                    <div className="member-img overlay-member" style={image}></div>
-                    <h3 className="member-name">Dimitrije Jankovic</h3>
-                    <p className="position">Junior</p>
-                    <ul className="member-social">
-                      <li>Intagram</li>
-                      <li>Facebook</li>
-                    </ul>
-                  </div>
-                  <div className="member col-lg-4">
-                    <div className="member-img overlay-member" style={image}></div>
+
+                <div className="member col-md-4">
+                  <div className="member-img overlay-member" style={image}>
                     <h3 className="member-name">Dimitrije Jankovic</h3>
                     <p className="position">Junior</p>
                     <ul className="member-social">
@@ -73,8 +55,98 @@ class About extends Component {
                     </ul>
                   </div>
                 </div>
+
+                <div className="member col-md-4">
+                  <div className="member-img overlay-member" style={image}>
+                    <h3 className="member-name">Dimitrije Jankovic</h3>
+                    <p className="position">Junior</p>
+                    <ul className="member-social">
+                      <li>Intagram</li>
+                      <li>Facebook</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="member col-md-4">
+                  <div className="member-img overlay-member" style={image}>
+                    <h3 className="member-name">Dimitrije Jankovic</h3>
+                    <p className="position">Junior</p>
+                    <ul className="member-social">
+                      <li>Intagram</li>
+                      <li>Facebook</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="member col-md-4">
+                  <div className="member-img overlay-member" style={image}>
+                    <h3 className="member-name">Dimitrije Jankovic</h3>
+                    <p className="position">Junior</p>
+                    <ul className="member-social">
+                      <li>Intagram</li>
+                      <li>Facebook</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="member col-md-4">
+                  <div className="member-img overlay-member" style={image}>
+                    <h3 className="member-name">Dimitrije Jankovic</h3>
+                    <p className="position">Junior</p>
+                    <ul className="member-social">
+                      <li>Intagram</li>
+                      <li>Facebook</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div className="member col-md-4">
+                  <div className="member-img overlay-member" style={image}>
+                    <h3 className="member-name">Dimitrije Jankovic</h3>
+                    <p className="position">Junior</p>
+                    <ul className="member-social">
+                      <li>Intagram</li>
+                      <li>Facebook</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="member col-md-4">
+                  <div className="member-img overlay-member" style={image}>
+                    <h3 className="member-name">Dimitrije Jankovic</h3>
+                    <p className="position">Junior</p>
+                    <ul className="member-social">
+                      <li>Intagram</li>
+                      <li>Facebook</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="member col-md-4">
+                  <div className="member-img overlay-member" style={image}>
+                    <h3 className="member-name">Dimitrije Jankovic</h3>
+                    <p className="position">Junior</p>
+                    <ul className="member-social">
+                      <li>Intagram</li>
+                      <li>Facebook</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div className="member col-md-4">
+                  <div className="member-img overlay-member" style={image}>
+                    <h3 className="member-name">Dimitrije Jankovic</h3>
+                    <p className="position">Junior</p>
+                    <ul className="member-social">
+                      <li>Intagram</li>
+                      <li>Facebook</li>
+                    </ul>
+                  </div>
+                </div>
+                
+
               </div>
-              <div className="spaceer"></div>
+              
 
             </div>
         </div>
