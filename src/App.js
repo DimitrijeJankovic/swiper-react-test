@@ -3,9 +3,9 @@ import { HashRouter, Switch, Route,  } from 'react-router-dom'
 import './App.css'
 
 import Navbar from './components/global/Navbar'
-
 import Footer from './components/global/Footer'
 import Main from './components/Main'
+import Gallery from './components/Gallery'
 import About from './components/About'
 import Contact from './components/Contact'
 
@@ -19,6 +19,7 @@ class App extends Component {
           <Switch>
             <div className="body">
               <Route exact path="/" component={Main} />
+              <Route exact path="/gallery" component={Gallery} />
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
             </div>
