@@ -45,7 +45,7 @@
     padding-right: 10px;
 }
 .nav-logo{
-    top: 5px;
+    top: -2px;
     position: absolute;
     left: 50%;
     margin-left: -60px;
@@ -260,7 +260,9 @@
 }
 
 /* <------------ GALLERY ------------> */
-
+.x-min{
+    margin-top: -100px;
+}
 .wrapper {
     width:100%;
     height: calc(100vh - 180px);
@@ -465,7 +467,32 @@
     background-repeat: no-repeat;
     background-origin: content-box;
 }
-
+.sw-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    color: white;
+    width: 100%;
+    padding-left: 35px;
+    padding-bottom: 15px;
+}
+.sw-content .gallery-name{
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Droid Serif', serif;
+    font-size: 20px;
+}
+.sw-content .photografer-name{
+    margin-top: -10px;
+    color: #dadada;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+.sw-content .photografer-name span{
+    font-weight: bold;
+    margin-left: 5px;
+}
 
 /* <------------ ABOUT ------------> */
 .about-container {

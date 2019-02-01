@@ -8,9 +8,10 @@ class Main extends Component {
 
 		const params = {
 	      slidesPerView: 1,
-	      spaceBetween: 0,
 	      centeredSlides: true,
-	      loop: true,
+				loop: true,
+				spaceBetween: 30,
+				freeMode: true,
 	      autoplay: {
 	        delay: 4000,
 	        disableOnInteraction: false
@@ -45,32 +46,35 @@ class Main extends Component {
             <div className="main">
 
               <Swiper {...params}>
+
                 <div className="swiper-main-conatiner">
                   <div className="overlay"></div>
                   <div className="bg" style={image.img1}></div>
                   <div className="swiper-content">
-                    <h3>Some text</h3>
-                    <p>ovde ide nesto najslepse sto se ikada culi u zivotu</p>
                   </div>
                 </div>
+
                 <div className="swiper-main-conatiner">
                   <div className="overlay"></div>
                   <div className="bg" style={image.img2}></div>
                   <div className="swiper-content">
                   </div>
                 </div>
+
                 <div className="swiper-main-conatiner">
                   <div className="overlay"></div>
                   <div className="bg" style={image.img3}></div>
                   <div className="swiper-content">
                   </div>
                 </div>
+
                 <div className="swiper-main-conatiner">
                   <div className="overlay"></div>
                   <div className="bg" style={image.img4}></div>
                   <div className="swiper-content">
                   </div>
                 </div>
+
             </Swiper>
             </div>
           </div>

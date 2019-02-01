@@ -6,6 +6,7 @@ import Navbar from './components/global/Navbar'
 import Footer from './components/global/Footer'
 import Main from './components/Main'
 import Gallery from './components/Gallery'
+import GalleryImg from './components/GalleryImg'
 import About from './components/About'
 import Contact from './components/Contact'
 
@@ -19,7 +20,9 @@ class App extends Component {
           <Switch>
             <div className="body">
               <Route exact path="/" component={Main} />
-              <Route exact path="/gallery" component={Gallery} />
+              <Route path="/gallery/:id" component={GalleryImg} />
+              <Route path="/gallery" component={Gallery} />
+              
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
             </div>
