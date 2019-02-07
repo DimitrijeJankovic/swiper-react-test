@@ -33,7 +33,7 @@ const initState = {
         {
             id: '4', 
             name:"Sofija i Nikola",
-            photographer: "Dragan Smiljkovic", 
+            photographer: "Dragan Smiljkovic",  
             date:'', 
             url: 'sofija-i-nikola',
             img: {
