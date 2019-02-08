@@ -13,14 +13,12 @@ import Contact from './components/Contact'
 import AdminMain from './components/admin/AdminMain'
 
 class App extends Component {
-
+  
   admin(){
     return(
-      <HashRouter>
-      <div className="container-fluid">
-        <AdminMain/>
-      </div>
-      </HashRouter>
+        <div className="container-fluid">
+          <AdminMain/>
+        </div>
     )
   }
 
