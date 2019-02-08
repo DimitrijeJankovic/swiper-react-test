@@ -9,7 +9,7 @@ const GalleryTemp = () => {
                 <p className="photografer-name">Photographer: <span>Dragan Smiljkovic</span></p>
             </div>
         </div>
-    )
+    ) 
 }
 
 export default GalleryTemp

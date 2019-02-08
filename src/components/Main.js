@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Swiper from 'react-id-swiper'; 
 import '../index.css'
+import { connect } from 'react-redux' 
 
 class Main extends Component {
 	
@@ -26,60 +27,31 @@ class Main extends Component {
 	      }
 	    }
 
-	    const image = {
-	      img1: {
-	        backgroundImage: 'url("images/img1.jpg")'
-	      },
-	      img2: {
-	        backgroundImage: 'url("images/img2.jpg")'
-	      },
-	      img3: {
-	        backgroundImage: 'url("images/img3.jpg")'
-	      },
-	      img4: {
-	        backgroundImage: 'url("images/img4.jpg")'
-	      }
-	    }
-
 		return (
 			<div className="row">
-            <div className="main">
-
-              <Swiper {...params}>
-
-                <div className="swiper-main-conatiner">
-                  <div className="overlay"></div>
-                  <div className="bg" style={image.img1}></div>
-                  <div className="swiper-content">
-                  </div>
-                </div>
-
-                <div className="swiper-main-conatiner">
-                  <div className="overlay"></div>
-                  <div className="bg" style={image.img2}></div>
-                  <div className="swiper-content">
-                  </div>
-                </div>
-
-                <div className="swiper-main-conatiner">
-                  <div className="overlay"></div>
-                  <div className="bg" style={image.img3}></div>
-                  <div className="swiper-content">
-                  </div>
-                </div>
-
-                <div className="swiper-main-conatiner">
-                  <div className="overlay"></div>
-                  <div className="bg" style={image.img4}></div>
-                  <div className="swiper-content">
-                  </div>
-                </div>
-
-            </Swiper>
-            </div>
-          </div>
+				<div className="main">
+					<Swiper {...params}>
+						{this.props.mainSlider && this.props.mainSlider.map(slider => {
+							return( 
+								<div className="swiper-main-conatiner">
+										<div className="overlay"></div>
+										<div className="bg" style={slider.img}></div>
+										<div className="swiper-content">
+										</div>
+								</div>
+							)
+						})}
+					</Swiper>
+				</div>
+			</div>
 		)
 	}
 }
 
-export default Main
+const mapStateToProps = (state) =>{
+	return{
+		mainSlider: state.main.mainSlider
+	}
+}
+
+export default connect(mapStateToProps)(Main)
