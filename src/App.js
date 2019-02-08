@@ -12,7 +12,15 @@ import Contact from './components/Contact'
 
 class App extends Component {
 
-  render() {
+  admin(){
+    return(
+      <div>
+        <h1>Ovo radi :DDDD</h1>
+      </div>
+    )
+  }
+
+  main(){
     return(
       <HashRouter>
         <div className="container-fluid">
@@ -33,7 +41,16 @@ class App extends Component {
     )
   }
 
+  render() {
+    const url = window.location.pathname
 
+    if(url == "/admin"){
+      return( this.admin() )      
+    }else{
+      return( this.main() )
+    }
+  }
+  
 }
 
 export default App
