@@ -14,9 +14,11 @@ class App extends Component {
 
   admin(){
     return(
-      <div>
+      <HashRouter>
+      <div className="container-fluid">
         <h1>Ovo radi :DDDD</h1>
       </div>
+      </HashRouter>
     )
   }
 
@@ -30,7 +32,6 @@ class App extends Component {
               <Route exact path="/" component={Main} />
               <Route path="/gallery/:id" component={GalleryImg} />
               <Route path="/gallery" component={Gallery} />
-              
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
             </div>
@@ -43,7 +44,7 @@ class App extends Component {
 
   render() {
     const url = window.location.pathname
-    console.log(window.location)
+
     if(url == "/admin"){
       return( this.admin() )      
     }else{
