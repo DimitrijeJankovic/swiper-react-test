@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Switch, Route,  } from 'react-router-dom'
+import { HashRouter, Switch, Route } from 'react-router-dom'
 import './App.css'
 
 import Navbar from './components/global/Navbar'
@@ -10,13 +10,15 @@ import GalleryImg from './components/GalleryImg'
 import About from './components/About'
 import Contact from './components/Contact'
 
+import AdminMain from './components/admin/AdminMain'
+
 class App extends Component {
 
   admin(){
     return(
       <HashRouter>
       <div className="container-fluid">
-        <h1>Ovo radi :DDDD</h1>
+        <AdminMain/>
       </div>
       </HashRouter>
     )
@@ -45,7 +47,7 @@ class App extends Component {
   render() {
     const url = window.location.pathname
 
-    if(url == "/admin"){
+    if(url === "/admin"){
       return( this.admin() )      
     }else{
       return( this.main() )
