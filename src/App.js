@@ -43,7 +43,7 @@ class App extends Component {
 
   render() {
     const url = window.location.pathname
-    console.log(url)
+    console.log(window.location)
     if(url == "/admin"){
       return( this.admin() )      
     }else{
