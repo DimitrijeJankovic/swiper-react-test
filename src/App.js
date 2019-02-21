@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Switch, Route } from 'react-router-dom'
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom'
 import './App.css'
 
 
@@ -11,10 +11,11 @@ class App extends Component {
   render() {
     return(
       <HashRouter>
-        <div className="">
+        <div className="container-fluid">
           <Switch>
             <div className="body">
-              <Route exact path="/" component={WebSite} />
+              <Redirect from="/" to="/main" />
+              <Route path="/main" component={WebSite} />
               <Route path="/admin" component={AdminMain} />
             </div>
           </Switch>

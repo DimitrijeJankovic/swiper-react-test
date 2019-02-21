@@ -19,27 +19,24 @@ class Main extends Component {
         };
 
         return(
-            <div className="row x-min">
-                <div className="wrapper fullsceen-wrap">
-                    <div class="content full-height">
-                        <div class="slider-wrap homecarousel hompad lightgallery lg-synk">
-                            <div class="swiper-container">
-                                <Swiper {...params}>
-
-                                    <Link to={"/gallery/jelena-i-marko"}>
-                                        <GalleryTemp/>
-                                    </Link>
-
-                                    <GalleryTemp/>
-                                    <GalleryTemp/>
-                                    <GalleryTemp/>
-                                    
-                                </Swiper>
-                            </div>
-                        </div>
-                    </div>
+          <div className="row x-min">
+            <div className="wrapper fullsceen-wrap">
+              <div class="content full-height">
+                <div class="slider-wrap homecarousel hompad lightgallery lg-synk">
+                  <div class="swiper-container">
+                    <Swiper {...params}>
+                      <Link to={"/main/gallery/jelena-i-marko"}>
+                        <GalleryTemp/>
+                      </Link>
+                      <GalleryTemp/>
+                      <GalleryTemp/>
+                      <GalleryTemp/>
+                    </Swiper>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         )
     }
 }

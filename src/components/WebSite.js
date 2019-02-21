@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Switch, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import '../App.css'
 
 import Navbar from './global/Navbar'
@@ -14,21 +14,19 @@ class WebSite extends Component {
 
     render() {
       return(
-        <HashRouter>
-          <div className="container-fluid">
-              <Navbar />
-            <Switch>
+          <div>
+            <Navbar />
               <div className="body">
-                <Route exact path="/" component={Main} />
-                <Route path="/gallery/:id" component={GalleryImg} />
-                <Route path="/gallery" component={Gallery} />
-                <Route path="/about" component={About} />
-                <Route path="/contact" component={Contact} />
+                <Switch>
+                    <Route path="/main/gallery/:id" component={GalleryImg} />
+                    <Route path="/main/gallery" component={Gallery} />
+                    <Route path="/main/about" component={About} />
+                    <Route path="/main/contact" component={Contact} />
+                    <Route path="/main" component={Main} />
+                </Switch>
               </div>
-            </Switch>
             <Footer />
           </div>
-        </HashRouter>
       )
     }
     
