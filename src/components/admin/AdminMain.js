@@ -10,7 +10,7 @@ class AdminMain extends Component {
      }
 
     render() {
-        if(!this.loggedIn) {
+        if(this.loggedIn) {
             return ( <Dashboard/> )
         }else{
             return ( <Login/> )
