@@ -1,6 +1,24 @@
 import React, { Component } from 'react'
 
 class AdminHeader extends Component {
+
+    constructor(props){
+		super(props);
+
+        this.toggleNavbar = this.toggleNavbar.bind(this);
+    }
+
+    state = {
+		toggleMenu: false,
+    }
+    
+    toggleNavbar(){
+		this.setState({
+            toggleMenu: !this.state.toggleMenu
+        })
+        console.log(this.state.toggleMenu)
+	}
+
     render() {
         return (
         <div className="row">
@@ -12,7 +30,7 @@ class AdminHeader extends Component {
                             <div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">OP</strong><strong>Admin</strong></div>
                             <div class="brand-text brand-sm"><strong class="text-primary">O</strong><strong>P</strong></div></a>
                             <div className="arrow-down">
-                                <button class="sidebar-toggle"><i class="fas fa-arrow-left"></i></button>
+                                <button onClick = { this.toggleNavbar }  class="sidebar-toggle"><i class="fas fa-arrow-left"></i></button>
                             </div>
                         </div>
                         <div class="right-menu list-inline no-margin-bottom">    
