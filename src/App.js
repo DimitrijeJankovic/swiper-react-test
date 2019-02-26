@@ -11,10 +11,10 @@ class App extends Component {
   render() {
     return(
       <HashRouter>
-        <div className="container-fluid">
+        <div>
           <Switch>
-            <div className="body">
-              <Redirect from="/" to="/main" />
+            <div>
+              <Redirect from="/" to="/admin" />
               <Route path="/main" component={WebSite} />
               <Route path="/admin" component={AdminMain} />
             </div>

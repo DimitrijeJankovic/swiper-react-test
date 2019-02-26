@@ -14,7 +14,7 @@ class WebSite extends Component {
 
     render() {
       return(
-          <div>
+          <div className="container-fluid">
             <Navbar />
               <div className="body">
                 <Switch>

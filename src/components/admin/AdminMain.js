@@ -6,7 +6,7 @@ class AdminMain extends Component {
     
     constructor(props) {
         super(props);
-        this.loggedIn = false //sessionStorage.getItem('admin') === 'true';
+        this.loggedIn = true //sessionStorage.getItem('admin') === 'true';
      }
 
     render() {
