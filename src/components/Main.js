@@ -11,7 +11,6 @@ class Main extends Component {
 	      slidesPerView: 1,
 	      centeredSlides: true,
 				loop: true,
-				spaceBetween: 30,
 				freeMode: true,
 	      autoplay: {
 	        delay: 4000,

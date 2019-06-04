@@ -16,7 +16,7 @@ class Contact extends Component {
                     <div className="bg" style={image}></div>
                 <div className="test">
                     <div className="contact">
-                        <h2>Our Contacts</h2>
+                        <h2>Contacts</h2>
                         <p>Praesent nec leo venenatis elit semper aliquet id ac enim. Maecenas nec mi leo. 
                             Etiam venenatis ut dui non hendrerit. Integer dictum, diam vitae blandit accumsan, 
                             dolor odio tempus arcu, vel ultrices nisi nibh vitae ligula.
